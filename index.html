@@ -1,0 +1,378 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Classical Photography - Wedding & Pre-Wedding Photographer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* --- General Styling --- */
+        :root {
+            --primary-color: #1a1a1a; /* Dark background */
+            --secondary-color: #333; /* Slightly lighter dark */
+            --accent-color: #b08968; /* Golden/Bronze accent */
+            --light-text-color: #f0f0f0;
+            --dark-text-color: #333;
+            --light-bg-color: #f9f9f9;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--light-bg-color);
+            color: var(--dark-text-color);
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            overflow: hidden;
+            padding: 40px 0; /* Increased padding */
+        }
+
+        /* --- Header --- */
+        header {
+            background: var(--primary-color);
+            color: var(--light-text-color);
+            padding: 40px 0; /* Increased padding */
+            text-align: center;
+            border-bottom: 5px solid var(--accent-color);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3em; /* Larger heading */
+            font-weight: 700;
+            letter-spacing: 1.5px;
+        }
+
+        header p {
+            font-size: 1.3em;
+            font-weight: 300;
+            margin-top: 10px;
+        }
+
+        /* --- Navigation --- */
+        nav {
+            background: var(--secondary-color);
+            color: var(--light-text-color);
+            padding: 15px 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        nav a {
+            color: var(--light-text-color);
+            text-decoration: none;
+            padding: 10px 25px; /* More padding */
+            font-size: 1.1em;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+            display: inline-block; /* For better mobile handling */
+        }
+
+        nav a:hover {
+            background: var(--accent-color);
+            color: var(--primary-color);
+        }
+
+        /* --- Sections --- */
+        section {
+            padding: 60px 0; /* Consistent padding for all sections */
+            text-align: center;
+            border-bottom: 1px solid #e0e0e0; /* Light separator */
+        }
+        section:last-of-type {
+            border-bottom: none; /* No border for the last section */
+        }
+
+        section h2 {
+            font-size: 2.8em; /* Larger headings for sections */
+            margin-bottom: 30px;
+            color: var(--primary-color);
+            font-weight: 700;
+            position: relative;
+        }
+        section h2::after { /* Underline effect for headings */
+            content: '';
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: -10px;
+            width: 80px;
+            height: 3px;
+            background-color: var(--accent-color);
+        }
+
+        section p {
+            font-size: 1.1em;
+            max-width: 800px;
+            margin: 0 auto 30px auto;
+            color: #555;
+        }
+
+        /* --- Portfolio/Catalog (Now linking to Instagram) --- */
+        #portfolio .instagram-link {
+            display: inline-block;
+            background: var(--accent-color);
+            color: var(--primary-color);
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.2em;
+            font-weight: 600;
+            text-decoration: none;
+            margin-top: 30px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        #portfolio .instagram-link:hover {
+            background-color: #a07a5d; /* Slightly darker accent on hover */
+            transform: translateY(-3px);
+        }
+        #portfolio p {
+            margin-bottom: 20px;
+        }
+
+
+        /* --- Pricing Table --- */
+        #pricing table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 30px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+            border-radius: 8px;
+            overflow: hidden; /* Ensures rounded corners apply to content */
+        }
+
+        #pricing th, #pricing td {
+            border: 1px solid #e0e0e0;
+            padding: 18px; /* More padding */
+            text-align: left;
+        }
+
+        #pricing th {
+            background-color: var(--primary-color);
+            color: var(--light-text-color);
+            font-weight: 600;
+            font-size: 1.1em;
+        }
+        #pricing tr:nth-child(even) {
+            background-color: #f2f2f2; /* Zebra striping for readability */
+        }
+        #pricing td {
+            font-size: 1em;
+            color: #444;
+        }
+
+
+        /* --- Booking Section --- */
+        #booking .button-link { /* Styling the booking button */
+            display: inline-block;
+            background: var(--accent-color);
+            color: var(--primary-color);
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.2em;
+            font-weight: 600;
+            text-decoration: none;
+            margin-top: 30px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        #booking .button-link:hover {
+            background-color: #a07a5d; /* Slightly darker accent on hover */
+            transform: translateY(-3px);
+        }
+        #booking p {
+            font-size: 1.1em;
+            max-width: 600px;
+            margin: 20px auto;
+        }
+
+        /* --- Footer --- */
+        footer {
+            background: var(--primary-color);
+            color: var(--light-text-color);
+            text-align: center;
+            padding: 30px 20px; /* More padding */
+            font-size: 0.95em;
+        }
+
+        footer p {
+            margin: 10px 0;
+        }
+
+        footer a {
+            color: var(--accent-color); /* Links in footer */
+            text-decoration: none;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: #d4a781; /* Lighter accent on hover */
+            text-decoration: underline;
+        }
+
+        /* --- Responsive Design (Media Queries) --- */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.2em;
+            }
+            header p {
+                font-size: 1em;
+            }
+            nav a {
+                padding: 10px 15px;
+                font-size: 1em;
+            }
+            section h2 {
+                font-size: 2em;
+            }
+            section p {
+                font-size: 1em;
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+            #pricing th, #pricing td {
+                padding: 10px;
+                font-size: 0.9em;
+            }
+            #booking .button-link, #portfolio .instagram-link {
+                padding: 12px 25px;
+                font-size: 1em;
+            }
+            footer {
+                padding: 20px 10px;
+            }
+            footer p {
+                font-size: 0.85em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            nav a {
+                display: block; /* Stack navigation links */
+                margin: 5px 0;
+            }
+            header h1 {
+                font-size: 1.8em;
+            }
+            header p {
+                font-size: 0.9em;
+            }
+            section h2 {
+                font-size: 1.8em;
+                margin-bottom: 20px;
+            }
+            section h2::after {
+                width: 60px;
+                bottom: -8px;
+            }
+            #pricing table {
+                font-size: 0.8em; /* Smaller font in table */
+            }
+            #booking .button-link, #portfolio .instagram-link {
+                width: 90%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            footer {
+                font-size: 0.8em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>The Classical Photography</h1>
+        <p>Capturing Moments, Creating Memories in India</p>
+    </header>
+
+    <nav>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a> <a href="#pricing">Rate List</a>
+        <a href="#booking">Book Now</a>
+    </nav>
+
+    <div class="container">
+        <section id="services">
+            <h2>Our Services</h2>
+            <p>We specialize in Wedding, Pre-Wedding, Candid Photography, Reels, and more. With a passion for storytelling, we ensure every moment is beautifully preserved, creating timeless memories for you.</p>
+        </section>
+
+        <section id="portfolio">
+            <h2>Our Portfolio</h2>
+            <p>हमारे नवीनतम काम और बेहतरीन पलों के संग्रह को देखने के लिए हमारे इंस्टाग्राम पेज पर जाएं।</p>
+            <a href="https://www.instagram.com/the_classical_photography?igsh=mwjnagmzehjkmmy5dw==" 
+               target="_blank" 
+               class="instagram-link">
+               View Our Portfolio on Instagram
+            </a>
+            </div>
+        </section>
+
+        <section id="pricing">
+            <h2>Rate List</h2>
+            <p>Our packages are designed to suit diverse needs, offering exceptional quality and value. Contact us for custom quotes.</p>
+            <table>
+                <tr>
+                    <th>Service</th>
+                    <th>Description</th>
+                    <th>Starting Price</th>
+                </tr>
+                <tr>
+                    <td>Candid Wedding Photography</td>
+                    <td>Full day coverage, 300+ edited photos, online gallery, 2 photographers.</td>
+                    <td>₹ 50,000</td>
+                </tr>
+                <tr>
+                    <td>Pre-Wedding Shoot</td>
+                    <td>4-hour session, 2 locations, 50 edited photos, cinematic reel (optional).</td>
+                    <td>₹ 25,000</td>
+                </tr>
+                <tr>
+                    <td>Wedding Film / Reels</td>
+                    <td>5-minute cinematic highlight video, 1-minute Instagram reel, drone footage (optional).</td>
+                    <td>₹ 40,000</td>
+                </tr>
+                 <tr>
+                    <td>Complete Wedding Package</td>
+                    <td>Photography + Film, full event coverage, album, all deliverables.</td>
+                    <td>₹ 1,00,000</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="booking">
+            <h2>Book Your Session</h2>
+            <p>अपनी बुकिंग के लिए नीचे दिए गए बटन पर क्लिक करके हमारा विस्तृत फ़ॉर्म भरें। हम आपके सपनों के इवेंट को कैप्चर करने के लिए उत्साहित हैं!</p>
+            
+            <a href="https://forms.gle/LFCujMDyWgP5Q1HY9" 
+               target="_blank" 
+               class="button-link">
+               Book Now via Google Form
+            </a>
+            <p style="margin-top: 15px; color: #555;">हम आपसे जल्द ही संपर्क करेंगे और आपके सभी सवालों का जवाब देंगे!</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 The Classical Photography. All Rights Reserved.</p>
+        <p>
+            Call us: <a href="tel:+916264821099">+91 6264821099</a> | 
+            Email: <a href="mailto:theclassicalphotography@gmail.com">theclassicalphotography@gmail.com</a>
+        </p>
+        <p>
+            Follow us on: <a href="https://www.instagram.com/the_classical_photography?igsh=mwjnagmzehjkmmy5dw==" target="_blank">Instagram</a>
+        </p>
+    </footer>
+
+</body>
+</html>
